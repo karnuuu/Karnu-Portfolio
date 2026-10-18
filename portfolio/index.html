@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Pashte | Portfolio</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<div class="mobile-topbar d-lg-none">
+  <span class="mobile-logo">KP<span class="dot">.</span></span>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+    <i class="bi bi-list"></i>
+  </button>
+</div>
+
+<div class="app-shell">
+
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="avatar-wrap">
+        <img src="images/profile.jpeg" alt="Karan Pashte" class="avatar" id="avatarImg">
+      </div>
+      <h1 class="profile-name">Karan Pashte</h1>
+      <p class="profile-role">IT Engineering Student</p>
+
+      <ul class="info-list">
+        <li>
+          <span class="info-icon"><i class="bi bi-envelope-fill"></i></span>
+          <div>
+            <span class="info-label">Email</span>
+            <a href="mailto:karanpaste-inft@atharvacoe.ac.in" class="info-value">karanpaste-inft@atharvacoe.ac.in</a>
+          </div>
+        </li>
+        <li>
+          <span class="info-icon"><i class="bi bi-telephone-fill"></i></span>
+          <div>
+            <span class="info-label">Phone</span>
+            <a href="tel:+917304429144" class="info-value">+91 73044 29144</a>
+          </div>
+        </li>
+        <li>
+          <span class="info-icon"><i class="bi bi-cake2-fill"></i></span>
+          <div>
+            <span class="info-label">Birthday</span>
+            <span class="info-value">28 May 2007</span>
+          </div>
+        </li>
+        <li>
+          <span class="info-icon"><i class="bi bi-geo-alt-fill"></i></span>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Mumbai, Maharashtra, India</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="social-row">
+        <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="social-btn" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        <a href="#" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+
+      <a href="#" class="btn-resume" id="resumeBtn">
+        <i class="bi bi-download"></i> Download CV
+      </a>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ===== Main content ===== -->
+  <main class="main-content">
+
+    <nav class="topnav" id="topnav">
+      <a href="#about" class="nav-link active" data-section="about">About</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      <span class="nav-indicator" id="navIndicator"></span>
+    </nav>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="content-section active-section">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <span class="head-rule"></span>
+      </div>
+      <p class="about-text">
+        I am an IT Engineering student currently learning C++ and Data Structures &amp; Algorithms.
+        I am interested in software development and enjoy building my skills through consistent
+        learning and practice.
+      </p>
+
+      <h3 class="sub-heading">What I'm Doing</h3>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tile-card">
+            <div class="tile-icon"><i class="bi bi-code-slash"></i></div>
+            <h4>Web Dev</h4>
+            <p>Learning the fundamentals of HTML, CSS and JavaScript while exploring how websites are designed and developed.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tile-card">
+            <div class="tile-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4>Maths &amp; Statistics</h4>
+            <p>Strengthening mathematical and statistical concepts that help me build a better foundation for programming.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tile-card">
+            <div class="tile-icon"><i class="bi bi-diagram-3-fill"></i></div>
+            <h4>Data Structures &amp; Algorithms</h4>
+            <p>Currently learning DSA and practicing how to approach programming problems using efficient solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Competencies</h3>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="tile-card competency-card">
+            <div class="tile-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h4>Problem Solving</h4>
+            <p>I enjoy solving problems and figuring things out step by step.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tile-card competency-card">
+            <div class="tile-icon"><i class="bi bi-ear-fill"></i></div>
+            <h4>Effective Listener</h4>
+            <p>I listen carefully first — because sometimes the solution appears before I even start talking.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tile-card competency-card">
+            <div class="tile-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <h4>Adaptability</h4>
+            <p>Always ready to learn, adjust, and try a different approach when things don't go as planned.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Technologies</h3>
+      <div class="tech-row">
+        <span class="tech-chip"><i class="bi bi-filetype-html text-danger"></i> HTML</span>
+        <span class="tech-chip"><i class="bi bi-c-circle-fill"></i> C++</span>
+        <span class="tech-chip"><i class="bi bi-filetype-py"></i> Python</span>
+        <span class="tech-chip"><i class="bi bi-filetype-js text-warning"></i> JavaScript</span>
+        <span class="tech-chip"><i class="bi bi-git"></i> Git</span>
+        <span class="tech-chip"><i class="bi bi-atom"></i> React</span>
+        <span class="tech-chip"><i class="bi bi-book-half"></i> DSA Learning</span>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="content-section">
+      <div class="section-head">
+        <h2>My Skills</h2>
+        <span class="head-rule"></span>
+      </div>
+
+      <div class="skills-wrap">
+        <div class="skill-item">
+          <div class="skill-top"><span>HTML &amp; C++</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Python</span><span class="skill-pct">67%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="67"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Data Structures &amp; Algorithms</span><span class="skill-pct">30%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="30"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span>Web Development</span><span class="skill-pct">25%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="25"></div></div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Currently Learning</h3>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="tile-card">
+            <div class="tile-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h4>C++ &amp; DSA</h4>
+            <p>Building a strong base in problem solving with data structures and algorithms in C++.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tile-card">
+            <div class="tile-icon"><i class="bi bi-window-stack"></i></div>
+            <h4>Frontend Development</h4>
+            <p>Exploring HTML, CSS and JavaScript to design and build clean, responsive interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portfolio ===== -->
+    <section id="portfolio" class="content-section">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <span class="head-rule"></span>
+      </div>
+
+      <div class="filter-row" id="filterRow">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="dsa">DSA</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <div class="row g-4" id="projectGrid">
+        <div class="col-md-6 col-lg-4 project-item" data-cat="web">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-person-badge"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Web Dev</span>
+              <h4>Personal Portfolio Website</h4>
+              <p>A responsive portfolio built with HTML, CSS and Bootstrap to showcase my skills and projects.</p>
+              <div class="project-links">
+                <a href="#" class="proj-link"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-cat="dsa">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-diagram-3"></i></div>
+            <div class="project-body">
+              <span class="project-tag">DSA</span>
+              <h4>DSA Visualizer</h4>
+              <p>A small tool that visualizes sorting algorithms step by step to make learning DSA easier.</p>
+              <div class="project-links">
+                <a href="#" class="proj-link"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-cat="python">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-terminal"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Python</span>
+              <h4>Expense Tracker CLI</h4>
+              <p>A command-line application in Python to log and analyze daily expenses.</p>
+              <div class="project-links">
+                <a href="#" class="proj-link"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-cat="web">
+          <div class="project-card">
+            <div class="project-thumb"><i class="bi bi-calculator"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Web Dev</span>
+              <h4>Responsive Calculator</h4>
+              <p>A clean calculator UI built with HTML, CSS and JavaScript with keyboard support.</p>
+              <div class="project-links">
+                <a href="#" class="proj-link"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="proj-link"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="empty-msg d-none" id="emptyMsg">No projects in this category yet.</p>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="content-section">
+      <div class="section-head">
+        <h2>Get In Touch</h2>
+        <span class="head-rule"></span>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="contact-info-card">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>Mumbai</h4>
+            <p>Maharashtra, India</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="bi bi-envelope-fill"></i>
+            <h4>Email</h4>
+            <p>karanpaste-inft@atharvacoe.ac.in</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="bi bi-telephone-fill"></i>
+            <h4>Phone</h4>
+            <p>+91 73044 29144</p>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" id="fullName" placeholder="Full Name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control custom-input" id="email" placeholder="Email Address" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control custom-input" id="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-send">
+                  Send Message <i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="form-success d-none" id="formSuccess">
+              <i class="bi bi-check-circle-fill"></i> Thanks! Your message has been noted.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
